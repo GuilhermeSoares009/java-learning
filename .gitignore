@@ -1,0 +1,23 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Build output
+out/
+target/
+bin/
+build/
+
+# Arquivos de cache
+*.class
+*.log
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Outros
+*.swp
+*.bak
+*.pem
+*.key
