@@ -1,30 +1,27 @@
+package java_basics;
+
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
-        Carro meuCarro = new Carro("Fusca");
+        Carro meuCarro = new Sandero();
+        Carro meuCarro2 = new Mobi();
 
-        Carro meuCarro1 = new Carro("Sandero");
-
-        Carro meuCarro2 = new Carro("BMW");
-
-        meuCarro.acelerar();
-        meuCarro1.acelerar();
+        meuCarro2.acelerar();
         meuCarro2.acelerar();
 
+        Humano meuSer = new Humano();
+        meuSer.respirar();;
+
+        Carro meuCarroFUrado = null;
+
+        try {
+            meuCarroFUrado.acelerar();
+        } catch (NullPointerException exception) {
+            System.out.println("vende carro furado");
+        }
+
     }
 }
 
-class Carro {
-    String modelo;
-
-    public Carro(String modelo)
-    {
-        this.modelo = modelo;
-    }
-
-    public void acelerar()
-    {
-        System.out.println("Acelerando o carro" + this.modelo);
-    }
-
-}
